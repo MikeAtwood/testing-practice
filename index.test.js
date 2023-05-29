@@ -19,3 +19,8 @@ test('add, subtract, divide and mulitply two numbers', () => {
     expect(Calculator(2, 2, '/')).toBe(1),
     expect(Calculator(2, 2, '*')).toBe(4)
 })
+
+// CaesarCiphar
+test("shifts around characters", () => {
+    expect()
+})
