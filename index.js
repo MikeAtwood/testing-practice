@@ -4,4 +4,13 @@ const capitalizeString = (string) => {
 capitalizeString('hello world')
 console.log(capitalizeString('hello world'))
 
-module.exports = { capitalizeString }
+// reverse string function
+const reverseString = (string) => {
+    let splitString = string.split("")
+    let reverseStr = splitString.reverse()
+    let joinStr = reverseStr.join("")
+    return joinStr
+}
+reverseString("hello world")
+
+module.exports = { capitalizeString, reverseString }
