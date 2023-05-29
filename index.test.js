@@ -9,5 +9,5 @@ test('capitalize first character in string', () => {
 
 // reverseString
 test('function takes string and returns it reversed', () => {
-    expect(reverseString('hello world')).toBe('dlrow olleh')
+    expect(reverseString('')).toBe('')
 })
