@@ -1,4 +1,4 @@
-const { capitalizeString, reverseString } = require('./index')
+const { capitalizeString, reverseString, Calculator } = require('./index')
 
 
 // Capitalize
@@ -14,8 +14,8 @@ test('function takes string and returns it reversed', () => {
 
 // Calculator
 test('add, subtract, divide and mulitply two numbers', () => {
-    expect(2 + 2).toBe(4),
-    expect(2 - 2).toBe(0),
-    expect(2 / 2).toBe(1),
-    expect(2 * 2).toBe(4)
+    expect(Calculator(2, 2, '+')).toBe(4),
+    expect(Calculator(2, 2, '-')).toBe(0),
+    expect(Calculator(2, 2, '/')).toBe(1),
+    expect(Calculator(2, 2, '*')).toBe(4)
 })
