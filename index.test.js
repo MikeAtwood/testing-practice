@@ -1,5 +1,7 @@
+const { capitalizeString } = require('./index')
+
+
 // Capitalize
 test('capitalize first character in string', () => {
-    const string = 'Hello World'
-    expect(string).toMatch(/^[A-Z]/)
+    expect(capitalizeString('hello world')).toBe('Hello world')
 })
