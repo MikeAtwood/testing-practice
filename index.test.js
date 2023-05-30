@@ -26,3 +26,14 @@ test('add, subtract, divide and mulitply two numbers', () => {
         expect(caesarCipher('hello')).toBe('ifmmp')
     })
 // }
+
+
+//AnalyzeArray
+test('takes array of numbers and returns: average, min, max and length', () => {
+    expect(({
+        average: [],
+        min: [],
+        max: [],
+        length: []
+    }))
+})
