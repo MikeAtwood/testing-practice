@@ -2,10 +2,14 @@ const { capitalizeString, reverseString, Calculator, caesarCipher, analyzeArray 
 
 
 // Capitalize
-test('capitalize first character in string', () => {
-    expect(capitalizeString('hello world')).toBe('Hello world')
-})
-
+// test('capitalize first character in string', () => {
+//     expect(capitalizeString('hello world')).toBe('Hello world')
+// })
+test('returns a promise that resolves to a capitalized string', () => {
+    return capitalizeString('hello world').then(result => {
+        expect(result).toBe('Hello world');
+    });
+  });
 
 // reverseString
 test('function takes string and returns it reversed', () => {
