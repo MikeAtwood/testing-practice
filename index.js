@@ -41,5 +41,28 @@ Calculator(2, 2, '-')
 Calculator(2, 2, '/')
 Calculator(2, 2, '*')
 
+// Casesar Cipher
+function caesarCipher(str, shift = 1) {
+    if (shift < 0) {
+      return caesarCipher(str, shift + 26);
+    }
+    let result = '';
+    for (let i = 0; i < str.length; i++) {
+      let char = str[i];
+      if (char.match(/[a-z]/i)) {
+        let code = str.charCodeAt(i);
+        if (code >= 65 && code <= 90) {
+          char = String.fromCharCode(((code - 65 + shift) % 26) + 65);
+        }
+        else if (code >= 97 && code <= 122) {
+          char = String.fromCharCode(((code - 97 + shift) % 26) + 97);
+        }
+      }
+      result += char;
+    }
+    return result;
+  }
+console.log(caesarCipher("hello"))
 
-module.exports = { capitalizeString, reverseString, Calculator }
+
+module.exports = { capitalizeString, reverseString, Calculator, caesarCipher }
