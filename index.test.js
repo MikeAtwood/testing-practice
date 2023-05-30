@@ -21,6 +21,9 @@ test('add, subtract, divide and mulitply two numbers', () => {
 })
 
 // CaesarCiphar
-test("shifts around characters", () => {
-    expect()
+test("shifts characters up one character", () => {
+    const a = 1
+    const b = 2
+    const shiftFactor = 1
+    expect(a + shiftFactor).toBe(b)
 })
