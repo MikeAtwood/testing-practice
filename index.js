@@ -64,5 +64,28 @@ function caesarCipher(str, shift = 1) {
   }
 console.log(caesarCipher("hello"))
 
+// Anazlyze Array 
+const analyzeArray = (array) => {
+    const sum = array.reduce((current, previous) => {
+        return current + previous
+    })
+    const average = sum / array.length
+    const min = array.reduce((current, previous) => {
+        return Math.min(current, previous)
+    })
+    const max = array.reduce((current, previous) => {
+        return Math.max(current, previous)
+    })
+    const length = array.length
 
-module.exports = { capitalizeString, reverseString, Calculator, caesarCipher }
+    const analyzedArray = {
+        average: average,
+        min: min,
+        max: max,
+        length: length
+    }
+    return analyzedArray
+}
+
+
+module.exports = { capitalizeString, reverseString, Calculator, caesarCipher, analyzeArray }

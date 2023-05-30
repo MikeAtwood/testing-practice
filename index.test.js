@@ -1,4 +1,4 @@
-const { capitalizeString, reverseString, Calculator, caesarCipher } = require('./index')
+const { capitalizeString, reverseString, Calculator, caesarCipher, analyzeArray } = require('./index')
 
 
 // Capitalize
@@ -30,10 +30,10 @@ test('add, subtract, divide and mulitply two numbers', () => {
 
 //AnalyzeArray
 test('takes array of numbers and returns: average, min, max and length', () => {
-    expect(({
-        average: [],
-        min: [],
-        max: [],
-        length: []
-    }))
+    expect(analyzeArray([1, 2, 3, 4, 5])).toEqual({
+        average: 3,
+        min: 1,
+        max: 5,
+        length: 5
+    })
 })
